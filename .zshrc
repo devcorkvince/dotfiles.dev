@@ -22,10 +22,10 @@ ZSH_THEME="dstufft"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -49,8 +49,7 @@ export PATH="$PATH:$HOME/Development/devcorkvince/Applications/.adroid/tools:$HO
 export EDITOR="vim"
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-
-alias psgrep="ps -aux | grep "
+alias psg="ps -aux | grep "
 alias gemset="rvm gemset "
 alias cart="redcar --multiple-instance --fork "
 alias tmuxs="tmux new-session -s "
@@ -58,9 +57,5 @@ alias tmuxl="tmux list-session "
 alias tmuxt="tmux attach-session -t "
 alias lsg="lsa | grep "
 
-
 #NACL
-export NACL_SDK_ROOT="~/Development/.nacl_sdk"
-
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export NACL_SDK_ROOT="$HOME/Development/.nacl_sdk"
