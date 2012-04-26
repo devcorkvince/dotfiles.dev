@@ -34,16 +34,16 @@ plugins=(git, rvm, gem, bundler, npm)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export rvm_path="/home/leivince/Development/.rvm"
+export rvm_path="$HOME/Development/.rvm"
 
 #RVM
-[[ -s "/home/leivince/Development/.rvm/scripts/rvm" ]] && source "/home/leivince/Development/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -s "$HOME/Development/.rvm/scripts/rvm" ]] && source "$HOME/Development/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 #NPM
-export PATH="$PATH:/home/leivince/Development/.npm/bin:/home/leivince/Development/.nacl_sdk"
+export PATH="$PATH:$HOME/Development/.npm/bin:$HOME/Development/.nacl_sdk"
 
 #ANDROID
-export PATH="$PATH:/home/leivince/Development/devcorkvince/Applications/.adroid/tools:/home/leivince/Development/devcorkvince/Applications/.adroid/platform-tools"
+export PATH="$PATH:$HOME/Development/devcorkvince/Applications/.adroid/tools:$HOME/Development/devcorkvince/Applications/.adroid/platform-tools"
 
 #Editor
 export EDITOR="vim"
@@ -56,10 +56,11 @@ alias cart="redcar --multiple-instance --fork "
 alias tmuxs="tmux new-session -s "
 alias tmuxl="tmux list-session "
 alias tmuxt="tmux attach-session -t "
+alias lsg="lsa | grep "
 
 
 #NACL
-export NACL_SDK_ROOT="/home/leivince/Development/.nacl_sdk"
+export NACL_SDK_ROOT="~/Development/.nacl_sdk"
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
